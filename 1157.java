@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class Main {
-//2675
+//1157
 	public static void main(String[] args) throws Exception {
 		BufferedReader bfr = new BufferedReader(new InputStreamReader(System.in));
 		String str = bfr.readLine();
@@ -28,6 +28,9 @@ public class Main {
 		else {
 			System.out.println((char)(Max_C+65));
 		}
-	
+		
 	}
 }
+// toUpperCase,toLowerCase 는 소요시간이 좀 많이 걸리는것 같음.
+// 아스키코드 숫자를 이용해서 대소문자를바꿔주는게 더 효과적으로 보임.
+// 대문자에서 32를 더하면 소문자가 되고 소문자에서 32를 빼면 대문자가 된다.
